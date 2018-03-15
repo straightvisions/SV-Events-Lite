@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+        <field name="category_id"
+			type="text"
+			default="0"
+			label="COM_EXTAVIUM_BOOKING_FORM_LBL_EMPLOYEE_ID"
+			readonly="true"
+			class="readonly"
+			description="JGLOBAL_FIELD_ID_DESC"
+		/> 
+        <field name="language" type="language" client="site" default="de-DE" label="Sprache wählen" description="" />
+        <field name="name" type="text" label="Name" required="true" filter="string" /> 
+        <field name="image" type="media" label="Kategorie Bild" directory="" /> 
+        
+        <field name="text" type="editor" label="Beschreibungstext" description="" width="600" filter="safehtml" /> 
+        
+  
+        <field name="color" type="color" default="#eee"
+	label="Farbe"
+	 />
+       
+
+ 
+		<field name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field> 
+
+ 
+		<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/> 
+
+ 
+	</fieldset> 
+
+ 
+	<fieldset name="accesscontrol">
+
+		<field name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="rules"
+			type="rules"
+			label="JFIELD_RULES_LABEL"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_extavium_booking"
+			section="course"
+		/>
+
+	</fieldset>
+
+</form>

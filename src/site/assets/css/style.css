@@ -1,0 +1,82 @@
+.svel-month{
+    
+    
+}
+
+.svel-month-title{
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:1.7rem;
+    background:#eee;
+    padding:15px 15px !important;
+}
+
+.svel-event{
+    border-top:1px solid #888;
+}
+
+.accordion-trigger:hover{
+    cursor:pointer;
+    background:#F5F5F5;
+}
+.svel-event-old{
+	opacity:0.7;
+}
+.svel-event > div{
+    padding:15px 15px !important;
+}
+
+.svel-event-body {
+    
+    display:none;
+    
+}
+
+*[class*="svel"] a.clean:hover{
+    color:inherit;
+}
+
+*[class*="svel"] a.clean:before,
+*[class*="svel"] a.clean:after
+{
+    display:none;
+}
+
+form[class*="svel"] .fullwidth{
+    width:100%;
+    max-width:100%;
+}
+
+form[class*="svel"] .required label:after{
+    content:" *";
+    color:red;
+}
+
+
+.svel-module-events{
+    padding:20px;
+}
+
+.svel-module-events .svel-event{
+    border-top:1px solid #eee;
+    margin:0 -20px;
+    padding:0 20px;
+    cursor:pointer;
+    padding:20px;
+}
+
+.svel-module-events .svel-event p:first-child{
+    margin-top:0;
+}
+
+.svel-module-events .svel-event:hover{
+    background:#f5f5f5;
+}
+
+.svel-module-events .svel-event+.svel-event{
+    
+}
+
+.svel-module-events .svel-event:last-child{
+    margin-bottom:-20px;
+}

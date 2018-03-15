@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_SV_EVENTS_LITE_TITLE_VIEW_APPLICATION" option="View">
+        <message>
+             <![CDATA[COM_SV_EVENTS_LITE_TITLE_VIEW_APPLICATION_DESC]]>
+        </message>
+    </layout>
+    
+</metadata>

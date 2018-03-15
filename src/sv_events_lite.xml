@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>SV Events Lite</name>
+    <creationDate>2018-03-15</creationDate>
+    <copyright>Copyright (C) 2018 straightvisions.com. Alle Rechte vorbehalten.</copyright>
+    <license>GNU General Public License Version 3 oder später; siehe LICENSE.txt</license>
+    <author>Dennis Heiden</author>
+    <authorEmail>info@straightvisions.com</authorEmail>
+    <authorUrl>straightvisions.com</authorUrl>
+    <version>1.0.0alpha</version>
+    <description>This component offers a simple event calendar with application functionality.</description>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>sv_events_lite.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="languages/site">
+			<language tag="en-GB">en-GB/en-GB.com_sv_events_lite.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_sv_events_lite.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_sv_events_lite/assets/images/logo.png">COM_SV_EVENTS_LITE_MENU</menu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>sv_events_lite.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+			<language tag="de-DE">de-DE/de-DE.com_sv_events_lite.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_sv_events_lite.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_sv_events_lite.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_sv_events_lite.sys.ini</language>
+        </languages>
+    </administration>
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<server type="extension" priority="1" name="SV Events Lite Update Server">https://github.com/straightvisionscom/SV-Events-Lite/blop/master/</server>
+	</updateservers>
+</extension>

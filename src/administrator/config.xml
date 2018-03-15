@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_SV_EVENTS_LITE" name="sv_events_lite">
+     
+        <field name="note1" type="note" description="COM_SV_EVENTS_LITE_CONFIG_NOTE1"  />
+        <field name="note2" type="note" description="COM_SV_EVENTS_LITE_CONFIG_NOTE2"  />
+        
+    </fieldset>
+    <fieldset label="COM_SV_EVENTS_LITE_CONFIG_CALENDAR" name="sv_events_lite_calendar_fields">
+        <field name="calendar_field_months" 
+               type="number" 
+               label="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_MONTHS_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_MONTHS_DESC" 
+               default="12"
+               min="1" 
+               max="72"       
+               step="1"
+        />
+ 
+        <field name="content_before" 
+               type="editor" 
+               label="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_CONTENT_BEFORE_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_CONTENT_BEFORE_DESC" 
+               width="100%" 
+               filter="safehtml" />
+        
+        <field name="content_after" 
+               type="editor" 
+               label="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_CONTENT_AFTER_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_CONTENT_AFTER_DESC" 
+               width="100%" 
+               filter="safehtml" />
+        
+    </fieldset>
+    <fieldset label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION" name="sv_events_lite_application_fields">
+        
+        <field name="application_menuitem" type="menuitem" label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_MENUITEM_LBL" description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_MENUITEM_DESC" />
+        <field name="application_thank_you_menuitem" type="menuitem" label="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_THANK_YOU_LBL" description="COM_SV_EVENTS_LITE_CONFIG_CALENDAR_FIELDS_THANK_YOU_DESC" />
+
+        <field name="" type="spacer" hr="true"/>
+           
+        <field name="application_field_salutation" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_SALUTATION_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_SALUTATION_DESC" 
+               value="1" />
+        
+        <field name="application_field_salutation_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_firstname" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_FIRSTNAME_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_FIRSTNAME_DESC" 
+               value="1" />
+        
+        <field name="application_field_firstname_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_lastname" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_LASTNAME_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_LASTNAME_DESC" 
+               value="1" />
+        
+        <field name="application_field_lastname_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_street" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_STREET_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_STREET_DESC" 
+               value="1" />
+        
+        <field name="application_field_street_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_street_number" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_STREET_NUMBER_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_STREET_NUMBER_DESC" 
+               value="1" />
+        
+        <field name="application_field_street_number_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_zip" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_ZIP_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_ZIP_DESC" 
+               value="1" />
+        
+        <field name="application_field_zip_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_city" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_CITY_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_CITY_DESC" 
+               value="1" />
+        
+        <field name="application_field_city_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_country" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_COUNTRY_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_COUNTRY_DESC" 
+               value="1" />
+        
+        <field name="application_field_country_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_phone" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_PHONE_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_PHONE_DESC" 
+               value="1" />
+        
+        <field name="application_field_phone_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_phone2" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_PHONE2_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_PHONE2_DESC" 
+               value="1" />
+        
+        <field name="application_field_phone2_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_email" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_EMAIL_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_EMAIL_DESC" 
+               value="1" />
+        
+        <field name="application_field_email_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_subject" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_SUBJECT_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_SUBJECT_DESC" 
+               value="1" />
+        
+        <field name="application_field_subject_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+        <field name="application_field_comment" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_COMMENT_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_APPLICATION_FIELDS_COMMENT_DESC" 
+               value="1" />
+        
+        <field name="application_field_comment_required" 
+               type="checkbox" 
+               label="COM_SV_EVENTS_LITE_REQUIRED" 
+               description="" 
+               value="1" />
+        
+        <field name="" type="spacer" hr="true"/>
+        
+    </fieldset>
+     <fieldset label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT" name="sv_events_lite_emails_client">
+    
+
+        <field name="email_client_send" 
+               class="inputbox"
+               type="list" 
+               default="1" 
+               label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_ACTIVATE_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_ACTIVATE_DEC">
+            <option value="1">COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_ACTIVATE_OPTION_1</option>
+            <option value="0">COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_ACTIVATE_OPTION_2</option>
+        </field>
+        
+        <field name="email_client_subject" 
+               type="text" 
+               label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_SUBJECT_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_SUBJECT_LBL" 
+               />
+        
+        <field name="email_client_text" 
+               type="editor" 
+               label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_TEXT_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_EMAIL_CLIENT_TEXT_DEC" 
+               width="100%" 
+               filter="safehtml" />
+        
+    </fieldset>
+    <fieldset label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN" name="sv_events_lite_emails_admin">
+        
+        <field name="email_admin_recipient" type="email"
+            label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN_RECIPIENT_LBL"
+            description="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN_RECIPIENT_DESC"
+            required="true"
+            size="30"
+            class="inputbox"
+            validate="email" />
+        
+        <field name="email_admin_sender" type="email"
+            label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN_SENDER_LBL"
+            description="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN_SENDER_DESC"
+            required="true"
+            size="30"
+            class="inputbox"
+            validate="email" />
+        
+        <field name="email_admin_text" 
+               type="editor" 
+               label="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN_TEXT_LBL" 
+               description="COM_SV_EVENTS_LITE_CONFIG_EMAIL_ADMIN_TEXT_DESC" 
+               width="100%" 
+               filter="safehtml" />
+        
+    </fieldset>
+    
+    <fieldset 
+        name="permissions"
+	description="JCONFIG_PERMISSIONS_DESC"
+	label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+                    name="rules" type="rules" component="com_sv_events_lite"
+                    class="inputbox" filter="rules" validate="rules"
+                    label="JCONFIG_PERMISSIONS_LABEL"
+                    section="component" />
+	</fieldset>
+</config>
